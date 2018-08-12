@@ -136,7 +136,7 @@ class RealTimeFFT(object):
         #         print("]");
         return out
 
-#Exm
+#Example
 #object = RealTimeFFT(8)
 #res = object.fft([1.3,2.1,3.9,4.0])
 #print(res)
