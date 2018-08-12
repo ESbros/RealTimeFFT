@@ -138,5 +138,5 @@ class RealTimeFFT(object):
 
 #Example
 #object = RealTimeFFT(8)
-#res = object.fft([1.5,2.1,3.9,4.0])
+#res = object.fft([1.5,2.1,3.9,4.6])
 #print(res)
