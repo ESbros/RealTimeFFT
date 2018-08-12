@@ -1,2 +1,2 @@
 # RealTimeFFT
-Java to Python 
+Java to Python (Fourier)
