@@ -1,10 +1,10 @@
 # ETL
-## 1. Activacion BD grafos
-## 2. Creacion de nodos
+## 1. Activación BD grafos
+## 2. Creación de nodos
 ## 3. Relación de nodos
 
 
-# 1. Activacion BD grafos
+# 1. Activación BD grafos
 
 ## 1.1 Ingresar configuraciones Neo4j
     vim /etc/neo4j/neo4j.conf
@@ -15,7 +15,7 @@
 ## 1.3 Inicializar BD
     systemctl start neo4j
     
-# 2. Creacion de nodos
+# 2. Creación de nodos
     Python: PostgreSQL() - Neo4j()
     
 # 3. Relación de nodos
