@@ -24,6 +24,6 @@
     /usr/bin/cypher-shell -u neo4j -p password
     
 ## 3.2 Ejecutar consultas
-    neo4j> MATCH (p:Pac), (e:Entidad) WHERE NOT (p)<-[:TIENE_PAC]-(e) AND p.idPersona = e.idEntidad CREATE (e)-[:TIENE_PAC]->(p);
+    MATCH (p:Pac), (e:Entidad) WHERE NOT (p)<-[:TIENE_PAC]-(e) AND p.idPersona = e.idEntidad CREATE (e)-[:TIENE_PAC]->(p);
 
     
