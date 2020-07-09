@@ -4,7 +4,7 @@ Java to Python (Fourier)
 
 # 1. Creacion BD grafos
 
-## 1.1 Ingresar archivo de configuraciones Neo4j
+## 1.1 Ingresar configuraciones Neo4j
     vim /etc/neo4j/neo4j.conf
 
 ## 1.2 Definir nombre BD
@@ -16,10 +16,10 @@ Java to Python (Fourier)
     
 # 2. Relación de nodos
 
-## 2.1 Acceder a consola de Cypher
+## 2.1 Acceder consola Cypher
     /usr/bin/cypher-shell -u neo4j -p password
     
-## Ejecutar consultas
+## 2.2 Ejecutar consultas
     neo4j> MATCH (p:Pac), (e:Entidad) WHERE NOT (p)<-[:TIENE_PAC]-(e) AND p.idPersona = e.idEntidad CREATE (e)-[:TIENE_PAC]->(p);
 
     
