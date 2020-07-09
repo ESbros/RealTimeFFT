@@ -1,8 +1,10 @@
-# RealTimeFFT
-Java to Python (Fourier)
+# ETL
+## 1. Activacion BD grafos
+## 2. Creacion de nodos
+## 3. Relación de nodos
 
 
-# 1. Creacion BD grafos
+# 1. Activacion BD grafos
 
 ## 1.1 Ingresar configuraciones Neo4j
     vim /etc/neo4j/neo4j.conf
@@ -13,13 +15,15 @@ Java to Python (Fourier)
 ## 1.3 Inicializar BD
     systemctl start neo4j
     
+# 2. Creacion de nodos
+    Python: PostgreSQL() - Neo4j()
     
-# 2. Relación de nodos
+# 3. Relación de nodos
 
-## 2.1 Acceder consola Cypher
+## 3.1 Acceder consola Cypher
     /usr/bin/cypher-shell -u neo4j -p password
     
-## 2.2 Ejecutar consultas
+## 3.2 Ejecutar consultas
     neo4j> MATCH (p:Pac), (e:Entidad) WHERE NOT (p)<-[:TIENE_PAC]-(e) AND p.idPersona = e.idEntidad CREATE (e)-[:TIENE_PAC]->(p);
 
     
