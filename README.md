@@ -16,7 +16,7 @@
     systemctl start neo4j
     
 # 2. Creación de nodos
-    Python: PostgreSQL() - Neo4j()
+    Python: PostgreSQL(psycopg2) - Neo4j(py2neo)
     
 # 3. Relación de nodos
 
